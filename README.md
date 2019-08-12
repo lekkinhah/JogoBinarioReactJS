@@ -1,2 +1,0 @@
-# JogoBinarioReactJS
-Created with CodeSandbox
