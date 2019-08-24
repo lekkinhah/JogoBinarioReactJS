@@ -23,7 +23,15 @@ function App() {
   };
 
   if (estado === "BEGINING") {
-    return <button onClick={StartGame}>Começar a jogar</button>;
+    return (
+      <div className="App">
+        <div>
+          <p className="textoInicial">Vamos jogar?</p>
+          <p>Pense em um número e clique em começar ... </p>
+        </div>
+        <button onClick={StartGame}>Começar a jogar</button>
+      </div>
+    );
   }
 
   const menor = () => {
@@ -47,7 +55,7 @@ function App() {
 
   if (estado === "END") {
     return (
-      <div>
+      <div className="App">
         <p>
           Acertei o número {palpite} com {numeroPapite} chutes!!
         </p>
